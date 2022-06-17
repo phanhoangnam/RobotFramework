@@ -1,0 +1,9 @@
+*** Test Cases ***;${username};${password};${error_message}
+HO-27: Right username, wrong password;Admin;admin;Either username or password is invalid
+HO-30: Right username, empty password;Admin;${EMPTY};Password cannot be empty
+HO-32: Wrong username, right password;Adm;admin123;Either username or password is invalid
+HO-33: Wrong username, wrong password;Adm;admin;Either username or password is invalid
+HO-34: Wrong username, empty password;Adm;${EMPTY};Password cannot be empty
+HO-35: Empty username, right password;${EMPTY};admin123;Username cannot be empty
+HO-36: Empty username, wrong password;${EMPTY};admin;Username cannot be empty
+HO-37: Empty username, empty password;${EMPTY};${EMPTY};Username cannot be empty
