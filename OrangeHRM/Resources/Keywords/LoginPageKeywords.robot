@@ -115,26 +115,37 @@ Verify OrangeHRM Link
     click element    ${link_footer}
     switch window    NEW
     location should be    https://www.orangehrm.com/
+    close window
+    switch window    MAIN
 
 Verify Linkedin Button
     click element    ${btn_linkedin}
     switch window    NEW
     location should be    http://www.linkedin.com/groups?home=&gid=891077
+    close window
+    switch window    MAIN
 
 Verify Facebook Button
     click element    ${btn_facebook}
     switch window    NEW
     location should be    https://www.facebook.com/OrangeHRM
+    close window
+    switch window    MAIN
 
 Verify Twitter Button
     click element    ${btn_twitter}
     switch window    NEW
     location should be    https://twitter.com/orangehrm
+    close window
+    switch window    MAIN
 
 Verify Youtube Button
     click element    ${btn_youtube}
     switch window    NEW
+#    title should be    OrangeHRM Inc - YouTube
     location should be    https://www.youtube.com/orangehrm
+    close window
+    switch window    MAIN
 
 Enter Username
     [Arguments]    ${username}
